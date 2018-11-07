@@ -1,18 +1,19 @@
 .title {
-    text-align: center;
+	text-align: center;
 }
-.tweet-form, .loading {
-    width: 50%;
-    margin: 0 auto;
+.tweet-form,
+.loading {
+	width: 50%;
+	margin: 0 auto;
 }
 .loading {
-    text-align: center;
+	text-align: center;
 }
 .tweets {
-    width: 50%;
-    margin: 0 auto;
+	width: 50%;
+	margin: 0 auto;
 }
 .tweet {
-    margin-bottom: 20px;
-    border-bottom: solid 1px #ccc;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #ccc;
 }
