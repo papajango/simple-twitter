@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Simple tweets</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simple tweets</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1 class="title">Simple tweets</h1>
+			</header>
+			<main>
+				<form class="tweet-form">
+					<label for="name">Name</label>
+					<input
+						class="u-full-width"
+						type="text"
+						id="name"
+						name="name"
+					/>
+					<label for="content">Tweet</label>
+					<textarea
+						class="u-full-width"
+						type="text"
+						id="content"
+						name="content"
+					></textarea>
+					<button class="button-primary">Tweet it!</button>
+				</form>
+				<div class="loading">
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+						alt=""
+					/>
+				</div>
+				<div class="tweets"></div>
+			</main>
+		</div>
 
-<body>
-    <header>
-        <h1 class='title'>Simple tweets</h1>
-    </header>
-    <main>
-        <form class='tweet-form'>
-            <label for="name">Name</label>
-            <input class='u-full-width' type="text" id='name' name='name'>
-            <label for="content">Tweet</label>
-            <textarea class='u-full-width' type="text" id='content' name='content'></textarea>
-            <button class='button-primary'>Tweet it!</button>
-        </form>
-        <div class='loading'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="">
-        </div>
-        <div class='tweets'></div>
-    </main>
-    <script src='./client.js'></script>
-</body>
-
+		<script src="./client.js"></script>
+	</body>
 </html>
