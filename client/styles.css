@@ -1,19 +1,17 @@
-.title {
-	text-align: center;
+body {
+	padding: 0 15px;
 }
-.tweet-form,
-.loading {
-	width: 50%;
-	margin: 0 auto;
-}
+.title,
 .loading {
 	text-align: center;
-}
-.tweets {
-	width: 50%;
-	margin: 0 auto;
 }
 .tweet {
 	margin-bottom: 20px;
 	border-bottom: solid 1px #ccc;
+}
+@media (min-width: 768px) {
+	.wrapper {
+		width: 50%;
+		margin: 0 auto;
+	}
 }
